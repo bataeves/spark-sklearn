@@ -6,7 +6,7 @@ This package contains some tools to integrate the [Spark computing framework](ht
  - (experimental) distribute Scipy's sparse matrices as a dataset of sparse vectors.
 
 Spark-sklearn focuses on problems that have a small amount of data and that can be run in parallel.
-- for small datasets, spark-sklearn distributes the search for estimator parameters (`GridSearchCV` in scikit-learn), using Spark,
+- for small datasets, spark-sklearn distributes the search for estimator parameters (`GridSearchCV` and `RandomizedSearchCV` in scikit-learn), using Spark,
 - for datasets that do not fit in memory, we recommend using the [distributed implementation in Spark MLlib](https://spark.apache.org/docs/latest/api/python/pyspark.mllib.html).
 
   > NOTE: This package distributes simple tasks like grid-search cross-validation. It does not distribute individual learning algorithms (unlike Spark MLlib).
@@ -72,5 +72,6 @@ More extensive documentation (generated with Sphinx) is available in the `python
    1. The official Spark target is Spark >= 2.1
 - 2017-09-29 Minor release (0.2.3):
    1. Fixes spark-package build of spark-sklearn.
-
-
+- 2017-10-25 Minor release (0.2.4):
+   1. Added RandomizedSearchCV
+   2. Fixex problem with spark driver memory when fits large Transformer (like StandardScaler)
