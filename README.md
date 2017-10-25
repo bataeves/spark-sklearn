@@ -73,5 +73,6 @@ build the docs yourself, see the instructions in [docs/README.md](https://github
 - 2017-09-29 Minor release (0.2.3):
    1. Fixes spark-package build of spark-sklearn.
 - 2017-10-25 Minor release (0.2.4):
-   1. Added RandomizedSearchCV
-   2. Fixex problem with spark driver memory when fits large Transformer (like StandardScaler)
+   1. Move all spark logic to base class SparkBaseSearchCV
+   2. Added RandomizedSearchCV
+   3. Fixes problem with spark driver memory when fits large Transformer (like StandardScaler)
