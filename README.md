@@ -72,3 +72,6 @@ build the docs yourself, see the instructions in [docs/README.md](https://github
    1. The official Spark target is Spark >= 2.1
 - 2017-09-29 Minor release (0.2.3):
    1. Fixes spark-package build of spark-sklearn.
+- 2017-10-25 Minor release (0.2.4):
+   1. Added RandomizedSearchCV
+   2. Fixex problem with spark driver memory when fits large Transformer (like StandardScaler)
