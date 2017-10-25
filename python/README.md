@@ -26,9 +26,9 @@ This package has the following requirements:
  [Spark official website](http://spark.apache.org/). In order to use spark-sklearn, you need to use the pyspark interpreter or another Spark-compliant python interpreter. See the [Spark guide](https://spark.apache.org/docs/latest/programming-guide.html#overview) for more details.
  - [nose](https://nose.readthedocs.org) (testing dependency only)
 
-This package is available on PYPI:
+This version of package is available on github:
 
-	pip install spark-sklearn
+	pip install "git+https://github.com/bataeves/spark-sklearn.git#egg=spark_sklearn&subdirectory=python"
 
 This project is also available as as [Spark package](http://spark-packages.org/package/databricks/spark-sklearn).
 

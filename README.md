@@ -19,9 +19,10 @@ This package is released under the Apache 2.0 license. See the LICENSE file.
 
 ## Installation
 
-This package is available on PYPI:
+This version of package is available on github:
 
-	pip install spark-sklearn
+	pip install "git+https://github.com/bataeves/spark-sklearn.git#egg=spark_sklearn&subdirectory=python"
+
 
 This project is also available as as [Spark package](http://spark-packages.org/package/databricks/spark-sklearn).
 
